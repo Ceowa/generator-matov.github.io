@@ -1,47 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" lang="RU">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<title>Генератор Матов 2.0</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mat generator 3.0</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-	<div class="all">
-<div class="main"></br>
-	<a class="maintext">Генератор Матов 2.0</a>
-</div></br>
-<div class="topnav">
-		<a class="middletext">Внимание! В обзывательствах могут быть использованы маты!
-А хотя кого это ебет :)</a>
-	</div></br></br><hr>
-	<div class="generator">
+<body class="bg-gray-900 text-white font-sans">
+	<header class="bg-gray-800 p-4 shadow-md">
+		<div class="container mx-auto flex justify-between items-center">
+			<div class="text-2xl font-bold">CEOWA</div>
+			<nav class="flex items-center space-x-4">
+				<div class="relative group">
+					<button class="focus:outline-none">Проекты</button>
+					<div class="absolute left-0 mt-2 w-48 bg-gray-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						<a href="#" class="block px-4 py-2 hover:bg-gray-600">MAT GENERATOR 3.0</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-		<a class="middletext" id="whois">Будем обзывать Парня</a><br><br>
-<a class="generatebutton" onclick="boyselected()">
-	  	&#8211; Парень &#8211;
-</a>	&#173;	&#173;	&#173;	&#173;	&#173;	&#173;	&#173;
-<a class="generatebutton" onclick="girlselected()">
-		&#8211; Девушка	&#8211; 
-</a>
+    <div class="container mx-auto p-4">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold mb-4">Генератор Матов 3.0</h1>
+            <p class="text-lg">Внимание! В обзывательствах могут быть использованы маты! А хотя кого это ебет :)</p>
+        </div>
 
+        <div class="text-center mb-8">
+            <p class="text-xl mb-4" id="whois">Будем обзывать Парня</p>
+            <div class="space-x-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded" onclick="boyselected()">Парень</button>
+                <button class="bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded" onclick="girlselected()">Девушка</button>
+            </div>
+        </div>
 
-    <br><br>
-		<a class="mat" id="mat">Мат + Мат</a></br></br>
-		<a class="generatebutton" onclick="generate()">
-	Сгенерировать
-</a><br><br><hr>
-<a class="middletext" id="creator"></a><a class="middletext"></a><br><br>
-<a class="generatebutton" href="https://www.instagram.com/vlad_sp1el/">
-	Мой Instagram
-</a><br><br>
-<a class="middletext">(R) generator-matov.github.io  ver. 4B9</a>
-	</div>
+        <div class="text-center mb-8">
+            <p class="text-2xl font-semibold mb-4" id="mat">Мат + Мат</p>
+            <button class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded" onclick="generate()">Сгенерировать</button>
+        </div>
 
-</div>
+        <div class="text-center mb-8">
+            <p class="text-lg" id="creator"></p>
+        </div>
 
-</div>
+        <div class="text-center">
+            <p class="text-gray-400">Sosiiii</p>
+        </div>
+    </div>
 
-<script src="js/generate.js"></script>
+    <script src="js/generate.js"></script>
+
+	<footer class="bg-gray-800 p-4 mt-8">
+		<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+			<div>
+				<h2 class="font-bold text-xl mb-2">О нас</h2>
+				<p>Мы - <p class="rand" id="rand"></p></p>
+			</div>
+			<div>
+				<h2 class="font-bold text-xl mb-2">Социальные сети</h2>
+				<ul class="space-y-2">
+					<li><a href="#" id="rand" class="rand hover:text-gray-400">
+						<p id="rand">nope</p>
+					</a></li>
+					<li><a href="#" id="rand" class="rand hover:text-gray-400">
+						<p id="rand">nope</p>
+					</a></li>
+					<li><a href="#" id="rand" class="rand hover:text-gray-400">
+						<p id="rand">nope</p>
+					</a></li>
+					<li><a href="#" id="rand" class="rand hover:text-gray-400">
+						<p id="rand">nope</p>
+					</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="font-bold text-xl mb-2">Контакты</h2>
+				<p>Email: info@ceowa.com</p>
+				<p>Телефон: +123 456 7890</p>
+			</div>
+		</div>
+		<div class="text-center mt-4">
+			&copy; 2024 CEOWA. Все права защищены.
+		</div>
+	</footer>
 </body>
 </html>
